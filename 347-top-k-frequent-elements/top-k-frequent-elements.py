@@ -11,12 +11,12 @@ class Solution:
         for key in freq:
             heapq.heappush(heap, (freq[key], key))
 
-            largest = heapq.nlargest(k, heap)
+        largest = heapq.nlargest(k, heap)
 
-            rv = []
+        rv = []
 
-            for v in largest:
-                rv.append(v[1])
+        for v in largest:
+            rv.append(v[1])
 
         return rv
 
